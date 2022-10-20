@@ -88,25 +88,24 @@ const [pokemonType, setPokemonType] = useState("")
                           </label>
                           <button onClick={handleSubmit}>Search</button>
                           
-                    </div>
-                    <div className={styles.imageContainer}>
+                      </div>
+                      <div className={styles.imageContainer}>
                       <img src={data.sprites["front_default"]} alt="" />
-                        
-                    </div>
-                    <div className={styles.titleList}>
+                      <div className={styles.titleList}>
                           <ul>
                             <li>{(data.name)}</li>
                             <li>  # {(data.order)}</li>
                           </ul>  
-                        </div> 
-                    <div className={styles.table}>
-                      <ul>
-                        <li className="divTableCell">Type -  {pokemonType} </li>
-                        {/* { data.types[1].type.name === null ? " " : <div>{data.types[1].type.name}</div>} */}
-                        <li className="divTableCell">Height -  {Math.round(data.height * 3.9)} "</li>
-                        <li className="divTableCell"> Weight - {Math.round(data.weight /4.3)} lbs</li>
-                        <li className="divTableCell"> Move - {(data.moves[0].move.name)}</li>
-                        <li className="divTableCell"> Ability - {(data.abilities[0].ability.name)}</li>
+                      </div> 
+                      </div>
+                      <div className={styles.table}>
+                        <ul>
+                          <li className="divTableCell">Type -  {pokemonType} </li>
+                          {/* { data.types[1].type.name === null ? " " : <div>{data.types[1].type.name}</div>} */}
+                          <li className="divTableCell">Height -  {Math.round(data.height * 3.9)} "</li>
+                          <li className="divTableCell"> Weight - {Math.round(data.weight /4.3)} lbs</li>
+                          <li className="divTableCell"> Move - {(data.moves[0].move.name)}</li>
+                          <li className="divTableCell"> Ability - {(data.abilities[0].ability.name)}</li>
                       </ul>  
                     </div>
                     {/* <div className={styles.loading}>
